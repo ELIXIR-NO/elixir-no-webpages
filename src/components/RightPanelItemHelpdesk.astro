@@ -1,0 +1,13 @@
+---
+import type { RightPanelItemHelpdeskProps } from 'src/types';
+const { name, items } = Astro.props as RightPanelItemHelpdeskProps;
+---
+
+<div class="RightPanelItem">
+	<h2 class="name">{name}</h2>
+	<div class="items">
+		<ul>
+			{items?.map(item => <li> {item} </li>)}
+		</ul>
+	</div>
+</div>

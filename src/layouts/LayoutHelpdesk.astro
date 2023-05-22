@@ -1,0 +1,79 @@
+---
+import '@styles/global.css';
+import '@styles/panels.css';
+import TopNavMenu from '@components/topNavMenu/TopNavMenu.astro';
+import Footer from '../components/Footer.astro';
+import type { LeftMenuProps } from 'src/types';
+import Panel from '@components/Panel.astro';
+import RightPanelItemHelpdesk from '@components/RightPanelItemHelpdesk.astro';
+---
+
+<div class="grid h-full grid-rows-[auto_minmax(500px,1fr)_2fr_200px]">
+	<div class="sticky top-0 z-10 grid grid-cols-[1fr_10fr_1fr] bg-gray-900/90">
+		<div></div>
+		<div>
+			<TopNavMenu />
+		</div>
+		<div></div>
+	</div>
+	<div class="grid grid-cols-3 bg-gray-600">
+		<!-- todo: Carousel component comes here -->
+	</div>
+	<div class="grid grid-cols-[2fr_8fr_2fr]">
+		<div></div>
+
+		<div class="outer_container">
+			<Panel
+				title="Helpdesk"
+				bg_color="#F47D20"
+				link="https://elixir.no/helpdesk"
+				icon="../../public/img/icons/circle-question-solid-col.svg"
+				description="Contact our nationally coordinated Helpdesk to get advise and support on most topics regarding bioinformatics and data management."
+			/>
+			<slot />
+		</div>
+
+		<div class="RightPanel">
+			<RightPanelItemHelpdesk
+				name="We offer the following types of support:"
+				items={[
+					'General advice and experimental design consultancy',
+					'Programming and scripting assistance',
+					'Data analysis',
+					'Data management and storage',
+				]}
+			/>
+
+			<RightPanelItemHelpdesk
+				name="We have experience working with data types such as:"
+				items={[
+					'High-throughput sequence data (DNA / RNA)',
+					'Proteomics data',
+					'Chip-seq data',
+					'Structural data',
+				]}
+			/>
+
+			<RightPanelItemHelpdesk
+				name="We have expertise in a wide range of biological and medical fields, including:"
+				items={[
+					'Genome and transcriptome assembly',
+					'Variant calling',
+					'Annotation',
+					'Gene expression, coding and noncoding',
+					'Methylation and epigenetics',
+					'Statistical genomics',
+					'Network analysis',
+					'Metagenomics',
+					'Microbial genomics',
+					'Cancer',
+					'Health',
+					'Marine',
+				]}
+			/>
+		</div>
+	</div>
+	<div class="bg-gray-800">
+		<Footer />
+	</div>
+</div>

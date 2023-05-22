@@ -6,3 +6,8 @@ export interface LeftMenuProps {
 	menuName: string;
 	menuItems: LeftMenuItems[];
 }
+
+export interface RightPanelItemHelpdeskProps {
+	name: string;
+	items: string[];
+}
