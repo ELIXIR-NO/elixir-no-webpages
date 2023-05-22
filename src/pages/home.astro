@@ -1,0 +1,158 @@
+---
+import MainLayout from '@layouts/MainLayout.astro';
+import Panel from '@components/Panel.astro';
+
+import '@styles/global.css';
+import '@styles/panels.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<MainLayout>
+			<div class="outer-container">
+				<div class="row">
+					<div class="two_column">
+						<Panel
+							title="Helpdesk"
+							bg_color="#F47D20"
+							link="https://elixir.no/helpdesk"
+							icon="../../public/img/icons/circle-question-solid-col.svg"
+							description="Short- and long-term support with bioinformatics analyses, programming and data management tasks. Contact the helpdesk."
+						/>
+						<Panel
+							title="NeLS e-infrastructure"
+							bg_color="#005472"
+							link="https://elixir.no/services/#h35ski0awr6isets8xsc475w18g2g5k"
+							icon="../../public/img/icons/network-wired-solid-col.svg"
+							description="NeLS, the Norwegian e-Infra­structure for Life Sciences, for analysis, sharing and storage of high throughput genomics data."
+						/>
+					</div>
+
+					<div class="two_column">
+						<Panel
+							title="Services"
+							bg_color="#4D4848"
+							link="https://elixir.no/services"
+							icon="../../public/img/icons/screwdriver-wrench-solid-col.svg"
+							description="Analysis and management of life science data within marine, health, genomics, proteomics, structural analysis and more."
+						/>
+						<Panel
+							title="Training"
+							bg_color="#BEBF32"
+							link="https://elixir.no/training"
+							icon="../../public/img/icons/user-graduate-solid-col.svg"
+							description="Local and national training in bioinformatics analysis and use of our tools."
+						/>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="three_column">
+						<h3>International deliverables</h3>
+						<p>
+							ELIXIR Norway currently contributes and develops four services to
+							ELIXIR Europe and the European community:
+						</p>
+						<ul>
+							<li>
+								<span
+									><a href="https://hyperbrowser.uio.no/hb/#!mode=basic"
+										>Genomic HyperBrowser</a
+									></span>
+							</li>
+							<li>
+								<span
+									><a href="http://bioxsd.org">BioXSD/GTrack ecosystem</a
+									></span>
+							</li>
+							<li><span><a href="https://licebase.org">LiceBase</a></span></li>
+							<li>
+								<span
+									><a href="https://mmp.sfb.uit.no"
+										>Marine Metagenomics Portal</a
+									></span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="three_column">
+						<h3>National nodes</h3>
+						<p>
+							ELIXIR Norway is a collaboration between five universities across
+							Norway:
+						</p>
+						<ul>
+							<li>
+								<span
+									><a
+										href="https://elixir.no/organization/organisation/elixir-uib"
+										>University of Bergen</a
+									> (Coordinator)</span>
+							</li>
+							<li>
+								<span
+									><a
+										href="https://elixir.no/organization/organisation/elixir-uio"
+										>University of Oslo</a
+									></span>
+							</li>
+							<li>
+								<span
+									><a
+										href="https://elixir.no/organization/organisation/elixir-uit"
+										>the Arctic University of Norway in Tromsø</a
+									></span>
+							</li>
+							<li>
+								<span
+									><a
+										href="https://elixir.no/organization/organisation/elixir-ntnu"
+										>NTNU Trondheim</a
+									></span>
+							</li>
+							<li>
+								<span
+									><a
+										href="https://elixir.no/organization/organisation/elixir-NMBU"
+										>NMBU Ås</a
+									></span>
+							</li>
+						</ul>
+					</div>
+
+					<div class="three_column">
+						<h3>Research &amp; Impact</h3>
+						<ul>
+							<li>
+								<span
+									><a
+										href="https://www.publika.no/publika?page=publist&decor=0&unitid=1000582,1000575,1000574,1000585,1000573,1000576,1000577&order=year-rev-author&extra=yb"
+										>Publications</a
+									></span>
+							</li>
+							<li>
+								<span
+									>Our members are involved in a wide range of high impact
+									research projects and centres of excellence</span>
+							</li>
+							<li>
+								<span
+									>We collaborate closely with major research infrastructures
+									and core facilities within biological and medical sciences in
+									Norway</span>
+							</li>
+						</ul>
+						<p>&nbsp;</p>
+					</div>
+				</div>
+			</div>
+		</MainLayout>
+	</body>
+</html>

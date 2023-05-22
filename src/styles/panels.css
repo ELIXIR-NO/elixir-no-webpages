@@ -1,0 +1,111 @@
+
+.icon {
+  float: left;
+  width: 150px;
+  height: 170px;
+}
+
+.icon > img {
+  width: 110px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.panel:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.panel_title {
+  font-size:large;
+  color: #047eaa;
+  font-weight: bold;
+}
+
+.panel {
+  display: flex;
+  background-color: white;
+  min-width: 300px;
+}
+/*TODO: Resizing the panel eventually makes the columns overlap. We should have a way to make it look better. */
+
+.panel > .box {
+  float: right;
+  width: 70%;
+  min-width: 190px;
+  max-width: 400px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.panel {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 600px;
+}
+
+.two_column {
+    float: left;
+    width: 50%;
+}
+
+.three_column {
+    float: left;
+    width: 33%;
+}
+
+.outer-container {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.outer-container ul {
+  margin-top: 15px;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.outer-container ul li {
+  color: #F47D20;
+  font-size: 20px;
+}
+
+.outer-container ul li span {
+  color: black;
+  font-size: 16px;
+}
+
+.outer-container a {
+  color: #005472;
+  text-decoration:none;
+}
+
+.outer-container a:hover {
+  text-decoration:underline;
+}
+
+
+.three_column > h3 {
+  font-weight: bold;
+}
+
+
+
+/* Clear floats after the columns 
+.row::after {
+   content: '\A';
+    white-space: pre;
+  display: block;
+  clear: both;
+}
+*/

@@ -1,0 +1,16 @@
+---
+const { icon, title, link, description, bg_color } = Astro.props;
+---
+
+<div class="panel">
+	<div class="icon" style={`background-color: ${bg_color}`}>
+		<img src={icon} />
+	</div>
+
+	<div class="box">
+		<div class="text">
+			<h2 class="panel_title"><a href={link}> {title}</a></h2>
+			<p>{description}</p>
+		</div>
+	</div>
+</div>
