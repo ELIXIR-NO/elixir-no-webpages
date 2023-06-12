@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@astrojs/react':
-    specifier: ^2.1.2
-    version: 2.1.2(@types/react-dom@18.2.1)(@types/react@18.2.0)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^2.2.1
+    version: 2.2.1(@types/react-dom@18.2.1)(@types/react@18.2.0)(react-dom@18.2.0)(react@18.2.0)
   '@astrojs/tailwind':
     specifier: ^3.1.1
     version: 3.1.1(astro@2.3.1)(tailwindcss@3.3.2)
@@ -149,8 +149,8 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react@2.1.2(@types/react-dom@18.2.1)(@types/react@18.2.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ApxiaX31T9ZL80z/w4Ep9lC2TvEtLtxhOYdKz+TSqdE5wgVOmKk5plRrMA5gvy87L9pFcyXyR4ZC91qEZaUGxA==}
+  /@astrojs/react@2.2.1(@types/react-dom@18.2.1)(@types/react@18.2.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-nq5Zr8iWdwjSp5fh1NReaCplwsnL4w5PXAY5XWu1jE/frxEfF/ycGHrrhwWW0uJHX9G+kUtmQLR0GBhlR4FmAw==}
     engines: {node: '>=16.12.0'}
     peerDependencies:
       '@types/react': ^17.0.50 || ^18.0.21
