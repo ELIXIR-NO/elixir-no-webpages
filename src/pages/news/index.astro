@@ -2,6 +2,7 @@
 import Layout from "/src/layouts/Layout.astro";
 import '@/styles/home.css';
 import { getCollection } from 'astro:content';
+const elixirnewsImg = '/elixir-no-webpages/images/news/Elixir_news.png';
 const blogs = (await getCollection('news', ({ data }) => {
   return data.isDraft !== true;
 })).sort(
@@ -17,7 +18,7 @@ const blogs = (await getCollection('news', ({ data }) => {
         {blogs.map((blog) =>
             <li>
             <article class="pages-link pages-content py-5">          
-                <a href={blog.slug}><img src={blog.data.img} alt="" /></a>
+                <a href={'/news/' + blog.slug}><img src={blog.data.img || elixirnewsImg} alt="" /></a>
                 <p class="py-3">{blog.data.date}</p>
                 <a href={'/elixir-no-webpages/news/' + blog.slug}>{blog.data.title}</a>
                 <p class="py-3">{blog.data.description}</p>
