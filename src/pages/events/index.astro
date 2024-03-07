@@ -8,7 +8,7 @@ import HomeContent from "/src/layouts/HomeContent.astro";
             <h2 class="section-title">Events</h2>        
     </div>
     <link rel="stylesheet" property="stylesheet" href="https://elixirtess.github.io/TeSS_widgets/css/tess-widget.css"/>
-    <div id="tess-widget-dropdown-table" class="tess-widget tess-widget-dropdown-table text-content mx-auto max-w-[1200px] py-4 pages-link"></div>
+    <div id="tess-widget-dropdown-table" class="tess-widget tess-widget-dropdown-table text-content mx-auto max-w-[800px] py-4 pages-link"></div>
     <script is:inline>
     function initTeSSWidgets() {
         TessWidget.Events(document.getElementById('tess-widget-dropdown-table'),
@@ -20,11 +20,11 @@ import HomeContent from "/src/layouts/HomeContent.astro";
                         {name: 'Organizer', field: 'organizer'},
                         {name: 'Location', field: 'location'}],
                     dropdowns: [{name: 'Type', field: 'event-types'},
-                        {name: 'Country', field: 'country'},
+                        {name: 'Organizer', field: 'organizer'},
                         {name: 'Topic', field: 'scientific-topics'}]
                 },
                 params: {
-                    q: '',
+                    q: 'Python',
                     country: ['Norway']
                 }
             });
