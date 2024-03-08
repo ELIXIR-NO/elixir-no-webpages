@@ -225,8 +225,8 @@ img[alt="member"] {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width: 220px;
-	height: auto;
+	width: auto;
+	height: 220px;
 	border-radius: 8px;
   }
 
@@ -287,3 +287,23 @@ img[alt="member"] {
     width: 100%;
     box-sizing: border-box;
 }
+
+img[alt="projects"] {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: auto;
+	height: 120px;
+	border-radius: 8px;
+  }
+
+img[alt="BioMedData_AH"] {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: auto;
+	height: auto;
+	border-radius: 8px;
+	margin-top:  50px;
+	margin-bottom:  50px;
+  }
