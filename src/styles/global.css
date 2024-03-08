@@ -68,31 +68,6 @@
 	background-color: #000000;
   }
 
-.search-bar {
-	display: flex;
-	align-items: center;
-}
-
-.search-input {
-	border: 1px solid #ccc;
-	padding: 5px;
-	margin-right: 0px;
-	color: black; 
-}
-
-.search-button {
-	background-color: orange; 
-	border: none;
-	cursor: pointer;
-}
-
-.search-icon {
-	background-color: orange;
-	padding: 1px; 
-	border-radius: 10%; 
-	border: 1px solid orange; 
-}
-
 .footer {
 	width: 100%;
 	display: flex;
@@ -123,11 +98,3 @@
   .flex.items-center {
 	margin-right: auto;
   }
-
-  .tess-widget-dropdown-table select {
-    padding: 5px; /* Adiciona espaçamento interno */
-    border-radius: 5px; /* Adiciona bordas arredondadas */
-    border: 1px solid #ccc; /* Adiciona uma borda */
-    width: 100%; /* Define a largura para ocupar 100% do contêiner pai */
-    box-sizing: border-box; /* Garante que o padding e a borda não aumentem a largura */
-}
