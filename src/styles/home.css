@@ -58,6 +58,13 @@
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
 
+  .text-title-tools {
+	margin-top: 30px;
+	font-weight: bold;
+	color: #2D2E33;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
   .text-content {
 	color: #2D2E33;
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -76,6 +83,10 @@
   }
   
   .box:hover .text-title {
+	color: white;
+  }
+
+  .box:hover .text-title-tools {
 	color: white;
   }
 
@@ -215,7 +226,7 @@ img[alt="member"] {
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 220px;
-	height: 220px;
+	height: auto;
 	border-radius: 8px;
   }
 
@@ -258,4 +269,21 @@ img[alt="member"] {
 	height: 225px;
 	border-radius: 8px;
 	position:relative;
+}
+
+.pages-content p {
+	margin-bottom: 10px;
+	line-break: normal;
+}
+
+.pages-content h3 {
+	margin-bottom: 30px;
+}
+
+.tess-widget-dropdown-table select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
 }

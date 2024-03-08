@@ -5,12 +5,11 @@ import HomeContent from "/src/layouts/HomeContent.astro";
 
 <Layout>
     <div class="body-content two-column text-content mx-auto max-w-[800px] py-4">
-            <h2 class="section-title py-8">Events</h2>
-            <p>Upcoming events organised by ELIXIR Norway will be displayed below.</p>
-            <p>Change filter settings to view bioinformatics related events throughout Europe</p>      
+            <h2 class="section-title py-4">Training</h2>
+            <p py-4>Upcoming national training events organised by ELIXIR Norway</p>         
     </div>
     <link rel="stylesheet" property="stylesheet" href="https://elixirtess.github.io/TeSS_widgets/css/tess-widget.css"/>
-    <div id="tess-widget-dropdown-table" class="tess-widget tess-widget-dropdown-table text-content mx-auto max-w-[1200px] py-4 pages-link"></div>
+    <div id="tess-widget-dropdown-table" class="tess-widget tess-widget-dropdown-table text-content mx-auto max-w-[800px] py-4 pages-link"></div>
     <script is:inline>
     function initTeSSWidgets() {
         TessWidget.Events(document.getElementById('tess-widget-dropdown-table'),

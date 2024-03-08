@@ -18,6 +18,14 @@ const newsCollection = defineCollection({
     }),
 });
 
+const servicesCollection = defineCollection({
+    schema: z.object({
+        title: z.string(),
+        description: z.string().optional(),
+        img: z.string().optional(),        
+    }),
+});
+
 
 export const collections = {
     'organisation': organisationCollection,
