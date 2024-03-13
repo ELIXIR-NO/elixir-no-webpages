@@ -76,7 +76,7 @@ export function NavbarWide() {
 				<NavigationMenuList>
 					<NavigationMenuItem>
 						<NavigationMenuTrigger>
-							<a href='/elixir-no-webpages/organisation'>Organisation</a>
+							<a href="/elixir-no-webpages/organisation">Organisation</a>
 						</NavigationMenuTrigger>
 						<NavigationMenuContent>
 							<ul className="flex max-w-fit flex-col gap-3 p-3">
@@ -134,14 +134,18 @@ export function NavbarWide() {
 					</NavigationMenuItem>
 					<NavigationMenuItem>
 						<ul className="flex max-w-fit flex-col gap-3 p-3 p-6">
-							<NavigationMenuLink href="/elixir-no-webpages/news">News</NavigationMenuLink>
+							<NavigationMenuLink href="/elixir-no-webpages/news">
+								News
+							</NavigationMenuLink>
 						</ul>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-							<ul className="flex max-w-fit flex-col gap-3 p-3 p-6 md:w-[200px] lg:w-[250px]">
-								<NavigationMenuLink href="/elixir-no-webpages/events">Events</NavigationMenuLink>
-							</ul>
-						</NavigationMenuItem>
+						<ul className="flex max-w-fit flex-col gap-3 p-3 p-6 md:w-[200px] lg:w-[250px]">
+							<NavigationMenuLink href="/elixir-no-webpages/events">
+								Events
+							</NavigationMenuLink>
+						</ul>
+					</NavigationMenuItem>
 				</NavigationMenuList>
 			</NavigationMenu>
 		</div>

@@ -4,103 +4,126 @@ import '@/styles/home.css';
 
 import { NavbarWide } from '@/components/navbar/navbar-wide';
 
-import { FaQuestion, FaTools, FaServer, FaGraduationCap, FaGlobe, FaSitemap, FaFlask, FaNewspaper } from 'react-icons/fa';
+import {
+	FaQuestion,
+	FaTools,
+	FaServer,
+	FaGraduationCap,
+	FaGlobe,
+	FaSitemap,
+	FaFlask,
+	FaNewspaper,
+} from 'react-icons/fa';
 
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-title?: string;
-project: CollectionEntry<'content'>;
+	title?: string;
+	project: CollectionEntry<'content'>;
 }
 const { title = 'Elixir Norway' } = Astro.props;
 const { slug } = Astro.props;
 ---
 
 <div class="flex text-center mx-auto">
-  <div class="flex-with-background ">
-    <h1 class="text-4xl font-bold mb-4 text-title2 max-w-[600px] mx-auto">{title}</h1>
-    <p class="text-lg mx-auto text-content2 max-w-[800px]">
-      ELIXIR Norway is a national node of ELIXIR, the pan-European infrastructure for biological information, supporting life science research and its translation to medicine, environment, the bioindustries, and society.
-    </p>
-    <p class="text-lg mx-auto text-content2 max-w-[800px]">
-      ELIXIR Norway is funded by the Research Council of Norway and builds upon the Norwegian Bioinformatics Platform, which has provided support and tools for Norwegian life science research for nearly two decades.
-    </p>
-  </div>
+	<div class="flex-with-background">
+		<h1 class="text-4xl font-bold mb-4 text-title2 max-w-[600px] mx-auto">
+			{title}
+		</h1>
+		<p class="text-lg mx-auto text-content2 max-w-[800px]">
+			ELIXIR Norway is a national node of ELIXIR, the pan-European
+			infrastructure for biological information, supporting life science
+			research and its translation to medicine, environment, the bioindustries,
+			and society.
+		</p>
+		<p class="text-lg mx-auto text-content2 max-w-[800px]">
+			ELIXIR Norway is funded by the Research Council of Norway and builds upon
+			the Norwegian Bioinformatics Platform, which has provided support and
+			tools for Norwegian life science research for nearly two decades.
+		</p>
+	</div>
 </div>
 
 <div class="box-container max-w-[1200px]">
-  <a href="/elixir-no-webpages/services/" class="box">
-    <div class="icon">
-      <FaTools size={40} />
-    </div>
-    <div class="text-title">Services</div>
-    <p>
-      Analysis and management of life science data within marine, health, genomics, proteomics, structural analysis, and more.
-    </p>
-  </a>
-  <a class="box">
-    <div class="icon">
-      <FaServer size={40} />
-    </div>
-    <div class="text-title">NeLS Infra­structure</div>
-    <p>
-      NeLS, the Norwegian e-Infra­structure for Life Sciences, for analysis, sharing, and storage of high throughput genomics data.
-    </p>
-  </a>
-    <a href="https://www.publika.no/publika?page=publist&decor=0&unitid=1000582,1000575,1000574,1000585,1000573,1000576,1000577&order=year-rev-author&extra=yb" class="box">
-    <div class="icon">
-      <FaFlask size={40} />
-    </div>
-    <div class="text-title">Research & Impact</div>
-    <p>
-      We collaborate closely with key research infrastructures and core facilities in Norway's biological and medical sciences, we engage in impactful research projects and centers of excellence.
-    </p>
-  </a>
-  <a href="/elixir-no-webpages/services/training" class="box">
-    <div class="icon">
-      <FaGraduationCap size={40} />
-    </div>
-    <div class="text-title">Training</div>
-    <p>
-      Local and national training in bioinformatics analysis and use of our tools.
-    </p>
-  </a>  
+	<a href="/elixir-no-webpages/services/" class="box">
+		<div class="icon">
+			<FaTools size={40} />
+		</div>
+		<div class="text-title">Services</div>
+		<p>
+			Analysis and management of life science data within marine, health,
+			genomics, proteomics, structural analysis, and more.
+		</p>
+	</a>
+	<a class="box">
+		<div class="icon">
+			<FaServer size={40} />
+		</div>
+		<div class="text-title">NeLS Infra­structure</div>
+		<p>
+			NeLS, the Norwegian e-Infra­structure for Life Sciences, for analysis,
+			sharing, and storage of high throughput genomics data.
+		</p>
+	</a>
+	<a
+		href="https://www.publika.no/publika?page=publist&decor=0&unitid=1000582,1000575,1000574,1000585,1000573,1000576,1000577&order=year-rev-author&extra=yb"
+		class="box">
+		<div class="icon">
+			<FaFlask size={40} />
+		</div>
+		<div class="text-title">Research & Impact</div>
+		<p>
+			We collaborate closely with key research infrastructures and core
+			facilities in Norway's biological and medical sciences, we engage in
+			impactful research projects and centers of excellence.
+		</p>
+	</a>
+	<a href="/elixir-no-webpages/services/training" class="box">
+		<div class="icon">
+			<FaGraduationCap size={40} />
+		</div>
+		<div class="text-title">Training</div>
+		<p>
+			Local and national training in bioinformatics analysis and use of our
+			tools.
+		</p>
+	</a>
 </div>
 <div class="box-container max-w-[1200px] pb-10">
-  <a class="box">
-    <div class="icon">
-      <FaGlobe size={40} />
-    </div>
-    <div class="text-title">International deliverables</div>
-    <p>
-      ELIXIR Norway currently contributes and develops four services to ELIXIR Europe and the European community.
-    </p>
-  </a>
-  <a href="/elixir-no-webpages/organisation/" class="box">
-    <div class="icon">
-      <FaSitemap size={40} />
-    </div>
-    <div class="text-title">National nodes</div>
-    <p>
-      ELIXIR Norway is a collaboration between five universities across Norway.
-    </p>
-  </a>
-  <a href="/elixir-no-webpages/news/" class="box">
-    <div class="icon">
-      <FaNewspaper size={40} />
-    </div>
-    <div class="text-title">News</div>
-    <p>
-      Regarding the latest updates about the Elixir project.
-    </p>
-  </a>
-  <a href="/elixir-no-webpages/services/helpdesk" class="box">
-      <div class="icon box">
-        <FaQuestion size={40} />
-      </div>
-      <div class="text-title">Helpdesk</div>
-        <p>
-          Short- and long-term support with bioinformatics analyses, programming, and data management tasks.          
-        </p>
-  </a>
+	<a class="box">
+		<div class="icon">
+			<FaGlobe size={40} />
+		</div>
+		<div class="text-title">International deliverables</div>
+		<p>
+			ELIXIR Norway currently contributes and develops four services to ELIXIR
+			Europe and the European community.
+		</p>
+	</a>
+	<a href="/elixir-no-webpages/organisation/" class="box">
+		<div class="icon">
+			<FaSitemap size={40} />
+		</div>
+		<div class="text-title">National nodes</div>
+		<p>
+			ELIXIR Norway is a collaboration between five universities across Norway.
+		</p>
+	</a>
+	<a href="/elixir-no-webpages/news/" class="box">
+		<div class="icon">
+			<FaNewspaper size={40} />
+		</div>
+		<div class="text-title">News</div>
+		<p>Regarding the latest updates about the Elixir project.</p>
+	</a>
+	<a href="/elixir-no-webpages/services/helpdesk" class="box">
+		<div class="icon box">
+			<FaQuestion size={40} />
+		</div>
+		<div class="text-title">Helpdesk</div>
+		<p>
+			Short- and long-term support with bioinformatics analyses, programming,
+			and data management tasks.
+		</p>
+	</a>
 </div>

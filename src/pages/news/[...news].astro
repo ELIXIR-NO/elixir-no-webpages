@@ -6,27 +6,28 @@ import '@/styles/home.css';
 import { type CollectionEntry, getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-    const newsEntries = await getCollection('news');
-    return newsEntries.map(entry => ({
-        params: { news: entry.slug }, props: { entry },
-  }));
+	const newsEntries = await getCollection('news');
+	return newsEntries.map(entry => ({
+		params: { news: entry.slug },
+		props: { entry },
+	}));
 }
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
-<Layout>
-  <div class="text-content mx-auto max-w-[800px]">
-    <h2 class="section-title">News</h2>
-    <br/>
-    <h1><strong>{entry.data.title}</strong></h1>
-    <hr>
-    {entry.data.date}
-  </div>
-  <div class="mx-auto max-w-[800px] py-4 text-content pages-link">
-	  <Content>
-  </div>
-  <div class="mx-auto max-w-[800px] py-4 text-content pages-link">
-	  <a href="/news/">Return</a>
-  </div>
-</Layout>
 
+<Layout>
+	<div class="text-content mx-auto max-w-[800px]">
+		<h2 class="section-title">News</h2>
+		<br />
+		<h1><strong>{entry.data.title}</strong></h1>
+		<hr />
+		{entry.data.date}
+	</div>
+	<div class="mx-auto max-w-[800px] py-4 text-content pages-link">
+		<Content />
+		<div class="mx-auto max-w-[800px] py-4 text-content pages-link">
+			<a href="/news/">Return</a>
+		</div>
+	</div>
+</Layout>

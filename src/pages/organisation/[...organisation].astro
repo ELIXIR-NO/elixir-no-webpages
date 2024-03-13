@@ -7,18 +7,21 @@ import '@/styles/home.css';
 import { type CollectionEntry, getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-    const organisationEntries = await getCollection('organisation');
-    return organisationEntries.map(entry => ({
-        params: { organisation: entry.slug }, props: { entry },
-  }));
+	const organisationEntries = await getCollection('organisation');
+	return organisationEntries.map(entry => ({
+		params: { organisation: entry.slug },
+		props: { entry },
+	}));
 }
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
-<Layout>
-	<div class="Organization-tromsoe mx-auto max-w-[800px] py-4 text-content pages-link">
-  <h2 class="section-title">{entry.data.title}</h2>
-	<Content/>
-  <MapLayout address={entry.data.address} map={entry.data.map}>
-</Layout>
 
+<Layout>
+	<div
+		class="Organization-tromsoe mx-auto max-w-[800px] py-4 text-content pages-link">
+		<h2 class="section-title">{entry.data.title}</h2>
+		<Content />
+		<MapLayout address={entry.data.address} map={entry.data.map} />
+	</div></Layout
+>

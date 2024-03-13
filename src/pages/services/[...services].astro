@@ -6,18 +6,19 @@ import '@/styles/home.css';
 import { type CollectionEntry, getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
-    const servicesEntries = await getCollection('services');
-    return servicesEntries.map(entry => ({
-        params: { services: entry.slug }, props: { entry },
-  }));
+	const servicesEntries = await getCollection('services');
+	return servicesEntries.map(entry => ({
+		params: { services: entry.slug },
+		props: { entry },
+	}));
 }
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
+
 <Layout>
 	<div class="mx-auto max-w-[800px] py-4 text-content pages-link pages-content">
-    <h2 class="section-title">{entry.data.title}</h2>
-	  <Content/>
-  </div>
+		<h2 class="section-title">{entry.data.title}</h2>
+		<Content />
+	</div>
 </Layout>
-
