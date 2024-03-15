@@ -5,7 +5,7 @@ const organisationCollection = defineCollection({
         title: z.string(),
         description: z.string().optional(),
         tags: z.array(z.string()).optional(),
-        address: z.string().transform((str) => new Date(str)).optional(),
+        address: z.string().optional(),
         map: z.string().optional(),
     }),
 });
