@@ -53,6 +53,8 @@
   
   .text-title {
 	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 	font-weight: bold;
 	color: #2D2E33;
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -68,6 +70,8 @@
   .text-content {
 	color: #2D2E33;
 	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	margin-left: 10px;
+	margin-right: 10px;
   }
   
   .box:hover {
@@ -335,8 +339,6 @@ img[alt="BioMedData_AH"] {
 		width: auto;
 		height: 100px;
 	}
-	.navbar {
-		display: none;
-	}
+	
 
   }
