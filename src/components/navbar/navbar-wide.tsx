@@ -126,9 +126,7 @@ export function NavbarWide() {
 						</NavigationMenuContent>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-						<NavigationMenuTrigger>
-							<a href='/services/'>Services</a>
-						</NavigationMenuTrigger>
+						<NavigationMenuTrigger>Services</NavigationMenuTrigger>
 						<NavigationMenuContent>
 							<ul className="lg:grid-col-[.75fr_1fr] grid gap-3 p-6 md:w-[400px] lg:w-[500px]">
 								{services.map(it => (

@@ -335,6 +335,11 @@ img[alt="BioMedData_AH"] {
 		width: auto;
 		height: 100px;
 	}
-	
+	.text-content {
+		color: #2D2E33;
+		font-family:Verdana, Geneva, Tahoma, sans-serif;
+		margin-right: 10px;
+		margin-left: 10px;
+	  }
 
   }
