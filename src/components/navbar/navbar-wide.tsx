@@ -175,23 +175,23 @@ export function Hamburger({isOpen }){
                     height: 0.25rem;
                     border-radius: 10px;
                     background-color: white;
-                    transform-origin: 10px;
+                    transform-origin: 1px;
                     transition: all 0.3s linear;
                 }
 
                 .burger1{
-					width: 3.2rem;
+					width: 2rem;
 					height: 0.25rem;
                     transform: ${ isOpen ? 'rotate(45deg)' : 'rotate(0)'};
                 }
                 .burger2{
-					width: 3.2rem;
+					width: 2rem;
 					height: 0.25rem;
                     transform: ${ isOpen ? 'translateX(100%)' : 'translateX(0)'};
                     opacity: ${ isOpen ? 0 : 1};
                 }
                 .burger3{
-					width: 3.2rem;
+					width: 2rem;
 					height: 0.25rem;
                     transform: ${ isOpen ? 'rotate(-45deg)' : 'rotate(0)'};
                 }
@@ -327,15 +327,14 @@ export function HamburgerNav(){
 						margin-top: 10px;
 						margin-right: 15px;
                     }
-
-                
                    
                     .navigation ul{
                         display: ${hamburgerOpen ? 'inline' : 'none'};
                         background-color: black;
-                        margin-top: 10px;
-                        position:absolute;
+                        position:fixed;
     					right: 0;
+						width: auto;
+                    	height: auto;
                     }
                 }
                 
