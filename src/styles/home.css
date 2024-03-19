@@ -122,8 +122,8 @@
 
   /* Home 2 */
   .flex-with-background {
-	background-image: url('images/diverse/global-network.jpeg');
-	background-image: linear-gradient(-90deg, rgba(245, 125, 32, 0.83), rgba(0, 57, 99, 0.83)), url('images/diverse/global-network.jpeg');
+	background-image: url('/elixir-no-webpages/images/diverse/global-network.jpeg');
+	background-image: linear-gradient(-90deg, rgba(245, 125, 32, 0.83), rgba(0, 57, 99, 0.83)), url('/elixir-no-webpages/images/diverse/global-network.jpeg');
 	background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
