@@ -138,10 +138,10 @@ export function NavbarWide() {
 						</NavigationMenuContent>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-							<NavigationMenuLink className={newNavColumn} href="/news">News</NavigationMenuLink>
+							<NavigationMenuLink className={newNavColumn} href="/elixir-no-webpages/news">News</NavigationMenuLink>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-							<NavigationMenuLink className={newNavColumn} href="/events">Events</NavigationMenuLink>
+							<NavigationMenuLink className={newNavColumn} href="/elixir-no-webpages/events">Events</NavigationMenuLink>
 					</NavigationMenuItem>
 				</NavigationMenuList>
 			</NavigationMenu>
