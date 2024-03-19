@@ -216,7 +216,7 @@ export function HamburgerNav(){
                 <ul>
 					<NavigationMenu>
 						<NavigationMenuList>
-							<NavigationMenuItem>
+							<NavigationMenuItem className="py-3">
 								<NavigationMenuTrigger>
 									<a href='/elixir-no-webpages/organisation/'>Organisation</a>
 								</NavigationMenuTrigger>
@@ -250,7 +250,7 @@ export function HamburgerNav(){
 									</ul>
 								</NavigationMenuContent>
 							</NavigationMenuItem>
-							<NavigationMenuItem>
+							<NavigationMenuItem className="py-3">
 								<NavigationMenuTrigger>Projects</NavigationMenuTrigger>
 								<NavigationMenuContent>
 									<ul className="lg:grid-col-[.75fr_1fr] grid gap-6 p-6 md:w-[400px] lg:w-[500px]">
@@ -262,10 +262,8 @@ export function HamburgerNav(){
 									</ul>
 								</NavigationMenuContent>
 							</NavigationMenuItem>
-							<NavigationMenuItem>
-								<NavigationMenuTrigger>
-									<a href='/elixir-no-webpages/services/'>Services</a>
-								</NavigationMenuTrigger>
+							<NavigationMenuItem className="py-3">
+								<NavigationMenuTrigger>Services</NavigationMenuTrigger>
 								<NavigationMenuContent>
 									<ul className="lg:grid-col-[.75fr_1fr] grid gap-6 p-6 md:w-[400px] lg:w-[500px]">
 										{services.map(it => (
@@ -276,10 +274,10 @@ export function HamburgerNav(){
 									</ul>
 								</NavigationMenuContent>
 							</NavigationMenuItem>
-							<NavigationMenuItem>
+							<NavigationMenuItem className="py-3">
 								<NavigationMenuLink className={newNavColumn} href="/elixir-no-webpages/news">News</NavigationMenuLink>
 							</NavigationMenuItem>
-							<NavigationMenuItem>
+							<NavigationMenuItem className="py-3">
 								<NavigationMenuLink className={newNavColumn} href="/elixir-no-webpages/events">Events</NavigationMenuLink>
 							</NavigationMenuItem>
 						</NavigationMenuList>
