@@ -1,7 +1,7 @@
 ---
 import '@/styles/global.css';
 import '@/styles/home.css';
-
+import { HamburgerNav } from '@/components/navbar/navbar-wide';
 import { NavbarWide } from '@/components/navbar/navbar-wide';
 
 import Footer from '@/components/Footer.astro';
@@ -25,7 +25,7 @@ const { title = 'Elixir Norway' } = Astro.props;
 			<NavbarWide client:load />
 		</div>
 		<div class="block md:hidden ">
-			<!-- TODO: burger menu for mobile screens -->
+			<HamburgerNav client:load />
 		</div>
 		<div class="h-full mx-auto max-w content-bg">
 			<div class="mx-auto">
